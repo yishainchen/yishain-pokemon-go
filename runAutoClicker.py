@@ -5,7 +5,7 @@ import time
 
 def checkConnected():
 	try:
-		response = urllib2.urlopen("http://172.16.255.195/", timeout = 1)
+		response = urllib2.urlopen("http://125.227.128.88/", timeout = 1)
 		return json.load(response)
 	except urllib2.URLError as e:
 		print e.reason
